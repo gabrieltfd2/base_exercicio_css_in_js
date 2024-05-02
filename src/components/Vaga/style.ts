@@ -1,30 +1,30 @@
-import styled from 'styled-components'
-import Cores from '../../cores'
+import styled from 'styled-components';
+import Cores from '../../cores';
 
 export const VagaLi = styled.li`
-  border: 1px solid ${Cores.corPrincipal});
+  border: 1px solid ${Cores.corPrincipal};
   background-color: ${Cores.corSecundaria};
   color: ${Cores.corPrincipal};
   padding: 16px;
   transition: all ease 0.3s;
   border-radius: 8px;
 
-  li:hover {
+  &:hover {
     background-color: ${Cores.corPrincipal};
     color: ${Cores.corSecundaria};
   }
 
-  li:hover a {
+  &:hover ${VagaLink} {
     border-color: ${Cores.corPrincipal};
     background-color: ${Cores.corSecundaria};
     color: ${Cores.corPrincipal};
   }
-`
+`;
 
 export const VagaTitulo = styled.h3`
   font-weight: bold;
   margin-bottom: 16px;
-`
+`;
 
 export const VagaLink = styled.a`
   border-color: ${Cores.corSecundaria};
@@ -42,4 +42,5 @@ export const VagaLink = styled.a`
   @media (max-width: 768px) {
     display: block;
   }
-`
+`;
+
