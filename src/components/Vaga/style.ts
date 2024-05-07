@@ -13,12 +13,6 @@ export const VagaLi = styled.li`
     background-color: ${Cores.corPrincipal};
     color: ${Cores.corSecundaria};
   }
-
-  &:hover ${VagaLink} {
-    border-color: ${Cores.corPrincipal};
-    background-color: ${Cores.corSecundaria};
-    color: ${Cores.corPrincipal};
-  }
 `;
 
 export const VagaTitulo = styled.h3`
@@ -39,8 +33,13 @@ export const VagaLink = styled.a`
   border-radius: 8px;
   text-align: center;
 
+  &:hover {
+    border-color: ${Cores.corPrincipal};
+    background-color: ${Cores.corSecundaria};
+    color: ${Cores.corPrincipal};
+  }
+
   @media (max-width: 768px) {
     display: block;
   }
 `;
-
